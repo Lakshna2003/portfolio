@@ -1,5 +1,4 @@
 # Portfolio
-
 Welcome to my portfolio website! 👋  
 This project showcases my work and skills as a Frontend Developer.
 
