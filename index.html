@@ -1,0 +1,118 @@
+<head>
+    <style>
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { display: inline-block; margin-right: 15px; }
+        section { padding: 5rem 2rem; text-align: center; }
+        .scroll { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="scroll">
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Welcome to My Portfolio</h1>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a third-year B.Tech student specializing in software development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>AQI Monitoring System, SIH Hackathon 2024.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: your.email@example.com</p>
+    </section>
+</body>
+<head>
+    <style>
+        :root { --bg-color: #fff; --text-color: #000; }
+        [data-theme="dark"] { --bg-color: #333; --text-color: #fff; }
+        body { background-color: var(--bg-color); color: var(--text-color); }
+    </style>
+</head>
+<body>
+    <button id="theme-toggle">Toggle Dark Mode</button>
+
+    <section>
+        <h1>My Portfolio</h1>
+        <p>Welcome! I specialize in web development.</p>
+    </section>
+
+    <script>
+        const toggleButton = document.getElementById("theme-toggle");
+        toggleButton.addEventListener("click", () => {
+            document.body.dataset.theme = document.body.dataset.theme === "dark" ? "" : "dark";
+        });
+    </script>
+</body>
+<section id="terminal">
+    <div class="command-line">> type "help" to see available commands</div>
+    <div class="output"></div>
+</section>
+<script>
+    document.addEventListener('keydown', function(event) {
+        // Capture the user's typed commands and display corresponding section
+    });
+</script>
+<canvas id="skillsChart"></canvas>
+<script>
+    var ctx = document.getElementById('skillsChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: ['C++', 'Java', 'JavaScript', 'HTML/CSS', 'DSA'],
+            datasets: [{
+                label: 'Skill Level',
+                data: [9, 8, 7, 8, 9]
+            }]
+        }
+    });
+</script>
+<a-scene>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+  </a-scene>
+  <div id="chatbox">
+    <p>User: <input type="text" id="userInput"></p>
+    <button onclick="getResponse()">Ask</button>
+    <p id="response"></p>
+ </div>
+ <script>
+    function getResponse() {
+        var input = document.getElementById("userInput").value;
+        var response = "Let me show you my latest project: AQI Monitoring System!";
+        document.getElementById("response").textContent = response;
+    }
+ </script>
+<canvas id="myCanvas" width="400" height="400"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(0, 0, 150, 75);
+</script>
+   
